@@ -10,19 +10,18 @@
 |%
 ++  sumofsquares
   |= a=@
-  |-  ^-  @u
   ?: (lte a 100)
    (div (mul (add a 1) a) 2)
    $
   
 ++ squareofsums
   |= a=@
-  |-  ^-  @u
+
   ?: (lte a 100)
    (div (mul (add (mul a 2) 1) (add a 1)) 6)
    $
   
 ++ ssd
   |=  a=@u
-  (subtract (sumofsquares a) (squareofsums a))
+  (sub (sumofsquares a) (squareofsums a))
 --
