@@ -21,6 +21,6 @@
    $
   
 ++ ssd
-  |=  a=@u
+  |= a=@u
   (sub (sumofsquares a) (squareofsums a))
 --
